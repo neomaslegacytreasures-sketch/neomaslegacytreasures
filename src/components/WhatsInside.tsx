@@ -25,6 +25,7 @@ const sections = [
 
 const WhatsInside = () => {
   const header = useReveal();
+  const grid = useReveal();
   const [showAll, setShowAll] = useState(false);
   const displayed = showAll ? sections : sections.slice(0, 8);
 
@@ -36,24 +37,20 @@ const WhatsInside = () => {
             What's Inside the Binder
           </h2>
         </div>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
-          {displayed.map((s, i) => {
-            const r = useReveal();
-            return (
-              <div
-                key={s.title}
-                {...r}
-                ref={r.ref}
-                className={`${r.className} reveal-delay-${i % 5} rounded-xl border border-border bg-card p-5 hover:shadow-md transition-shadow`}
-              >
-                <div className="w-8 h-8 rounded-lg bg-accent/30 flex items-center justify-center mb-3">
-                  <span className="font-heading font-bold text-sm text-accent-foreground">{i + 1}</span>
-                </div>
-                <h3 className="font-heading font-bold text-sm text-foreground mb-1.5">{s.title}</h3>
-                <p className="font-body text-xs text-muted-foreground leading-relaxed">{s.desc}</p>
+        <div {...grid} ref={grid.ref} className={`${grid.className} grid sm:grid-cols-2 lg:grid-cols-4 gap-4`}>
+          {displayed.map((s, i) => (
+            <div
+              key={s.title}
+              className="rounded-xl border border-border bg-card p-5 hover:shadow-md transition-shadow"
+              style={{ animationDelay: `${i * 80}ms` }}
+            >
+              <div className="w-8 h-8 rounded-lg bg-accent/30 flex items-center justify-center mb-3">
+                <span className="font-heading font-bold text-sm text-accent-foreground">{i + 1}</span>
               </div>
-            );
-          })}
+              <h3 className="font-heading font-bold text-sm text-foreground mb-1.5">{s.title}</h3>
+              <p className="font-body text-xs text-muted-foreground leading-relaxed">{s.desc}</p>
+            </div>
+          ))}
         </div>
         {!showAll && (
           <div className="text-center mt-8">
