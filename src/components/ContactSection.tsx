@@ -5,7 +5,7 @@ import { Mail, ShoppingBag, Facebook } from "lucide-react";
 
 const ETSY_URL = "https://neomastreasuresbyang.etsy.com";
 const FACEBOOK_URL = "https://www.facebook.com/profile.php?id=61579698460894";
-const EMAIL = "neomastreasures@gmail.com";
+const EMAIL = "neomaslegacytreasures@gmail.com";
 
 const ContactSection = () => {
   const header = useReveal();
