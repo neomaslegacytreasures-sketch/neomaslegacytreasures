@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import logoHorizontal from "@/assets/logo-horizontal.png";
 
 const ETSY_URL = "https://neomastreasuresbyang.etsy.com";
 
@@ -17,8 +18,8 @@ const Navbar = () => {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-card/90 backdrop-blur-md border-b border-border">
       <div className="container-wide section-padding flex items-center justify-between h-16">
-        <a href="#" className="font-heading font-bold text-lg text-foreground">
-          Neoma's Legacy Treasures
+        <a href="#" className="block">
+          <img src={logoHorizontal} alt="Neoma's Legacy Treasures — Estate Planning & Family Heritage" className="h-10 w-auto" />
         </a>
 
         {/* Desktop */}
