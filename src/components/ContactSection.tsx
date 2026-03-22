@@ -12,12 +12,26 @@ const ContactSection = () => {
   const { toast } = useToast();
   const [form, setForm] = useState({ name: "", email: "", help: "", message: "" });
   const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!form.name.trim() || !form.email.trim() || !form.message.trim()) return;
-    setSubmitted(true);
-    toast({ title: "Message sent!", description: "Thank you for reaching out. I'll be in touch as soon as possible." });
+    setLoading(true);
+    try {
+      const res = await fetch("https://formspree.io/f/xqeywndk", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ ...form, _subject: "New Contact Message" }),
+      });
+      if (!res.ok) throw new Error("Submission failed");
+      setSubmitted(true);
+      toast({ title: "Message sent!", description: "Thank you for reaching out. I'll be in touch as soon as possible." });
+    } catch {
+      toast({ title: "Something went wrong", description: "Please try again later.", variant: "destructive" });
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
