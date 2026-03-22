@@ -9,12 +9,26 @@ const ChecklistSignup = () => {
   const [email, setEmail] = useState("");
   const [submitted, setSubmitted] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const [loading, setLoading] = useState(false);
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!name.trim() || !email.trim()) return;
-    // Placeholder for Formspree integration
-    setSubmitted(true);
-    toast({ title: "Thank you!", description: "Your free checklist is on the way." });
+    setLoading(true);
+    try {
+      const res = await fetch("https://formspree.io/f/xqeywndk", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ name, email, _subject: "New Checklist Signup" }),
+      });
+      if (!res.ok) throw new Error("Submission failed");
+      setSubmitted(true);
+      toast({ title: "Thank you!", description: "Your free checklist is on the way." });
+    } catch {
+      toast({ title: "Something went wrong", description: "Please try again later.", variant: "destructive" });
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -53,9 +67,10 @@ const ChecklistSignup = () => {
             />
             <button
               type="submit"
-              className="w-full rounded-lg bg-primary px-6 py-3.5 font-heading font-bold text-primary-foreground shadow-md hover:shadow-lg transition-shadow active:scale-[0.97]"
+              disabled={loading}
+              className="w-full rounded-lg bg-primary px-6 py-3.5 font-heading font-bold text-primary-foreground shadow-md hover:shadow-lg transition-shadow active:scale-[0.97] disabled:opacity-50 disabled:cursor-not-allowed"
             >
-              Send Me the Free Checklist
+              {loading ? "Sending…" : "Send Me the Free Checklist"}
             </button>
           </form>
         )}
