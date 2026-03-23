@@ -39,7 +39,7 @@ const Navbar = () => {
         </div>
 
         {/* Mobile toggle */}
-        <button onClick={() => setOpen(!open)} className="md:hidden p-2 text-foreground" aria-label="Toggle menu">
+        <button onClick={() => setOpen(!open)} className="md:hidden p-2 text-primary-foreground" aria-label="Toggle menu">
           {open ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
         </button>
       </div>
