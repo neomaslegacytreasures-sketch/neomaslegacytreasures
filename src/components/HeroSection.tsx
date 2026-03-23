@@ -8,7 +8,7 @@ const HeroSection = () => {
   const r2 = useReveal();
 
   return (
-    <section className="relative overflow-hidden bg-card pt-24 pb-16 lg:pt-32 lg:pb-24 section-padding">
+    <section className="relative overflow-hidden bg-primary pt-24 pb-16 lg:pt-32 lg:pb-24 section-padding">
       <div className="container-wide">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           <div {...r1} ref={r1.ref}>
