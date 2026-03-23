@@ -46,7 +46,7 @@ const ProductShowcase = () => {
               {badges.map((b) => (
                 <span
                   key={b}
-                  className="rounded-full border border-border bg-background px-3 py-1 text-xs font-heading font-bold text-foreground"
+                  className="rounded-full border border-border bg-background px-3 py-1 text-xs font-label font-bold text-foreground tracking-brand"
                 >
                   {b}
                 </span>
