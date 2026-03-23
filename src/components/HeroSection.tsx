@@ -35,7 +35,7 @@ const HeroSection = () => {
               </a>
               <a
                 href="#checklist"
-                className="inline-flex items-center justify-center rounded-lg bg-accent px-6 py-3 font-heading font-bold text-accent-foreground shadow-sm hover:shadow-md transition-shadow active:scale-[0.97]"
+                className="inline-flex items-center justify-center rounded-lg bg-secondary px-6 py-3 font-label font-bold text-secondary-foreground shadow-sm hover:shadow-md transition-shadow active:scale-[0.97] tracking-brand"
               >
                 Get Free Checklist
               </a>
