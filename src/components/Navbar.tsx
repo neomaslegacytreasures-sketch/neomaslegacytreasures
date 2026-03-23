@@ -25,7 +25,7 @@ const Navbar = () => {
         {/* Desktop */}
         <div className="hidden md:flex items-center gap-6">
           {links.map((l) => (
-            <a key={l.href} href={l.href} className="font-heading text-sm text-muted-foreground hover:text-foreground transition-colors">
+            <a key={l.href} href={l.href} className="font-label text-sm text-primary-foreground/70 hover:text-primary-foreground transition-colors tracking-brand">
               {l.label}
             </a>
           ))}
