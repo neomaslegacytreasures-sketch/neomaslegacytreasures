@@ -15,7 +15,7 @@ const HeroSection = () => {
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold leading-[1.1] tracking-tight text-primary-foreground mb-6">
               Estate Planning Printables & Personal Guidance to Help Families Get Organized
             </h1>
-            <p className="font-body text-lg text-muted-foreground mb-8 max-w-lg leading-relaxed">
+            <p className="font-body text-lg text-primary-foreground/70 mb-8 max-w-lg leading-relaxed">
               Get your affairs in order with a beautifully designed estate planning binder, plus practical support for organizing important documents, final wishes, and legacy information in one clear place.
             </p>
             <div className="flex flex-wrap gap-3 mb-5">
