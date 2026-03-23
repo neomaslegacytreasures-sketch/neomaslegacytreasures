@@ -12,7 +12,7 @@ const HeroSection = () => {
       <div className="container-wide">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           <div {...r1} ref={r1.ref}>
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold leading-[1.1] tracking-tight text-foreground mb-6">
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold leading-[1.1] tracking-tight text-primary-foreground mb-6">
               Estate Planning Printables & Personal Guidance to Help Families Get Organized
             </h1>
             <p className="font-body text-lg text-muted-foreground mb-8 max-w-lg leading-relaxed">
