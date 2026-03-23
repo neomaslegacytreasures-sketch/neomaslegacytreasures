@@ -61,7 +61,7 @@ const Navbar = () => {
             href={ETSY_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block rounded-lg bg-primary px-4 py-2 text-sm font-heading font-bold text-primary-foreground shadow-sm mt-2"
+            className="inline-block rounded-lg bg-accent px-4 py-2 text-sm font-label font-bold text-accent-foreground shadow-sm mt-2 tracking-brand"
           >
             Shop on Etsy
           </a>
