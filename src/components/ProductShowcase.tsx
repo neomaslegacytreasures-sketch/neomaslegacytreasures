@@ -32,7 +32,7 @@ const ProductShowcase = () => {
           </div>
           <div {...r2} ref={r2.ref}>
             <div className="inline-flex items-center gap-2 rounded-full bg-accent/20 px-4 py-1.5 mb-6">
-              <span className="text-xs font-heading font-bold tracking-wide uppercase text-accent-foreground">
+              <span className="text-xs font-label font-bold tracking-brand text-accent-foreground">
                 Instant Download • Printable or Digital • Thoughtfully Designed
               </span>
             </div>
