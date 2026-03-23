@@ -29,7 +29,7 @@ const HeroSection = () => {
               </a>
               <a
                 href="#contact"
-                className="inline-flex items-center justify-center rounded-lg border-2 border-primary px-6 py-3 font-heading font-bold text-primary transition-colors hover:bg-primary hover:text-primary-foreground active:scale-[0.97]"
+                className="inline-flex items-center justify-center rounded-lg border-2 border-primary-foreground px-6 py-3 font-label font-bold text-primary-foreground transition-colors hover:bg-primary-foreground hover:text-primary active:scale-[0.97] tracking-brand"
               >
                 Work With Angie
               </a>
