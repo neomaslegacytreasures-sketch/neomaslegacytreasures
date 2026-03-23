@@ -13,7 +13,8 @@ const FooterSection = () => (
             <p className="font-heading font-bold text-lg">
               Neoma's Legacy Treasures
             </p>
-          <p className="text-sm opacity-70 mt-1">Estate Planning Printables & Support</p>
+            <p className="text-sm opacity-70 mt-1">Estate Planning Printables & Support</p>
+          </div>
         </div>
         <div className="flex gap-6 text-sm">
           <a href={ETSY_URL} target="_blank" rel="noopener noreferrer" className="hover:underline underline-offset-4 opacity-80 hover:opacity-100 transition-opacity">
