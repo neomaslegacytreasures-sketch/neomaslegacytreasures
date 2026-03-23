@@ -32,7 +32,7 @@ const ProductShowcase = () => {
           </div>
           <div {...r2} ref={r2.ref}>
             <div className="inline-flex items-center gap-2 rounded-full bg-accent/20 px-4 py-1.5 mb-6">
-              <span className="text-xs font-heading font-bold tracking-wide uppercase text-accent-foreground">
+              <span className="text-xs font-label font-bold tracking-brand text-accent-foreground">
                 Instant Download • Printable or Digital • Thoughtfully Designed
               </span>
             </div>
@@ -46,7 +46,7 @@ const ProductShowcase = () => {
               {badges.map((b) => (
                 <span
                   key={b}
-                  className="rounded-full border border-border bg-background px-3 py-1 text-xs font-heading font-bold text-foreground"
+                  className="rounded-full border border-border bg-background px-3 py-1 text-xs font-label font-bold text-foreground tracking-brand"
                 >
                   {b}
                 </span>
@@ -56,7 +56,7 @@ const ProductShowcase = () => {
               href={ETSY_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center rounded-lg bg-primary px-8 py-3.5 font-heading font-bold text-primary-foreground shadow-md hover:shadow-lg transition-shadow active:scale-[0.97]"
+              className="inline-flex items-center justify-center rounded-lg bg-primary px-8 py-3.5 font-label font-bold text-primary-foreground shadow-md hover:shadow-lg transition-shadow active:scale-[0.97] tracking-brand"
             >
               Shop on Etsy
             </a>

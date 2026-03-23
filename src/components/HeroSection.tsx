@@ -8,14 +8,14 @@ const HeroSection = () => {
   const r2 = useReveal();
 
   return (
-    <section className="relative overflow-hidden bg-card pt-24 pb-16 lg:pt-32 lg:pb-24 section-padding">
+    <section className="relative overflow-hidden bg-primary pt-24 pb-16 lg:pt-32 lg:pb-24 section-padding">
       <div className="container-wide">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           <div {...r1} ref={r1.ref}>
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold leading-[1.1] tracking-tight text-foreground mb-6">
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold leading-[1.1] tracking-tight text-primary-foreground mb-6">
               Estate Planning Printables & Personal Guidance to Help Families Get Organized
             </h1>
-            <p className="font-body text-lg text-muted-foreground mb-8 max-w-lg leading-relaxed">
+            <p className="font-body text-lg text-primary-foreground/70 mb-8 max-w-lg leading-relaxed">
               Get your affairs in order with a beautifully designed estate planning binder, plus practical support for organizing important documents, final wishes, and legacy information in one clear place.
             </p>
             <div className="flex flex-wrap gap-3 mb-5">
@@ -23,24 +23,24 @@ const HeroSection = () => {
                 href={ETSY_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center rounded-lg bg-primary px-6 py-3 font-heading font-bold text-primary-foreground shadow-md hover:shadow-lg transition-shadow active:scale-[0.97]"
+                className="inline-flex items-center justify-center rounded-lg bg-accent px-6 py-3 font-label font-bold text-accent-foreground shadow-md hover:shadow-lg transition-shadow active:scale-[0.97] tracking-brand"
               >
                 Shop the Binder on Etsy
               </a>
               <a
                 href="#contact"
-                className="inline-flex items-center justify-center rounded-lg border-2 border-primary px-6 py-3 font-heading font-bold text-primary transition-colors hover:bg-primary hover:text-primary-foreground active:scale-[0.97]"
+                className="inline-flex items-center justify-center rounded-lg border-2 border-primary-foreground px-6 py-3 font-label font-bold text-primary-foreground transition-colors hover:bg-primary-foreground hover:text-primary active:scale-[0.97] tracking-brand"
               >
                 Work With Angie
               </a>
               <a
                 href="#checklist"
-                className="inline-flex items-center justify-center rounded-lg bg-accent px-6 py-3 font-heading font-bold text-accent-foreground shadow-sm hover:shadow-md transition-shadow active:scale-[0.97]"
+                className="inline-flex items-center justify-center rounded-lg bg-secondary px-6 py-3 font-label font-bold text-secondary-foreground shadow-sm hover:shadow-md transition-shadow active:scale-[0.97] tracking-brand"
               >
                 Get Free Checklist
               </a>
             </div>
-            <p className="text-sm text-muted-foreground italic">
+            <p className="text-sm text-primary-foreground/60 italic">
               Printable or digital. Thoughtfully designed. Created to make a sensitive process feel calmer, clearer, and easier to manage.
             </p>
           </div>

@@ -14,8 +14,9 @@ export default {
     },
     extend: {
       fontFamily: {
-        heading: ["League Spartan", "sans-serif"],
+        heading: ["Libre Baskerville", "serif"],
         body: ["Libre Baskerville", "serif"],
+        label: ["League Spartan", "sans-serif"],
       },
       colors: {
         border: "hsl(var(--border))",
@@ -51,8 +52,8 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        teal: "hsl(var(--teal))",
-        olive: "hsl(var(--olive))",
+        "deep-teal": "hsl(var(--deep-teal))",
+        "core-teal": "hsl(var(--core-teal))",
         bone: "hsl(var(--bone))",
         walnut: "hsl(var(--walnut))",
         gold: {
