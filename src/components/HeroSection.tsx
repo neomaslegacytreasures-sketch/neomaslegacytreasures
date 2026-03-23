@@ -23,7 +23,7 @@ const HeroSection = () => {
                 href={ETSY_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center rounded-lg bg-primary px-6 py-3 font-heading font-bold text-primary-foreground shadow-md hover:shadow-lg transition-shadow active:scale-[0.97]"
+                className="inline-flex items-center justify-center rounded-lg bg-accent px-6 py-3 font-label font-bold text-accent-foreground shadow-md hover:shadow-lg transition-shadow active:scale-[0.97] tracking-brand"
               >
                 Shop the Binder on Etsy
               </a>
