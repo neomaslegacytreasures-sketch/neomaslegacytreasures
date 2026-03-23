@@ -28,7 +28,7 @@ const StickyCTA = () => {
           </a>
           <a
             href="#contact"
-            className="rounded-lg border border-primary px-5 py-2 text-sm font-heading font-bold text-primary hover:bg-primary hover:text-primary-foreground transition-colors active:scale-[0.97]"
+            className="rounded-lg border border-primary px-5 py-2 text-sm font-label font-bold text-primary hover:bg-primary hover:text-primary-foreground transition-colors active:scale-[0.97] tracking-brand"
           >
             Work With Angie
           </a>
