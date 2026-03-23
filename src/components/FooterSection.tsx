@@ -5,7 +5,7 @@ const ETSY_URL = "https://neomastreasuresbyang.etsy.com";
 const FACEBOOK_URL = "https://www.facebook.com/profile.php?id=61579698460894";
 
 const FooterSection = () => (
-  <footer className="py-12 section-padding bg-foreground text-primary-foreground">
+  <footer className="py-12 section-padding bg-primary text-primary-foreground">
     <div className="container-wide">
       <div className="flex flex-col md:flex-row justify-between items-center gap-6">
         <div className="flex items-center gap-3">
