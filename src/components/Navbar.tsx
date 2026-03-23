@@ -46,13 +46,13 @@ const Navbar = () => {
 
       {/* Mobile menu */}
       {open && (
-        <div className="md:hidden bg-card border-b border-border section-padding pb-6 space-y-3">
+        <div className="md:hidden bg-primary border-b border-primary-foreground/10 section-padding pb-6 space-y-3">
           {links.map((l) => (
             <a
               key={l.href}
               href={l.href}
               onClick={() => setOpen(false)}
-              className="block font-heading text-sm text-muted-foreground hover:text-foreground transition-colors py-1"
+              className="block font-label text-sm text-primary-foreground/70 hover:text-primary-foreground transition-colors py-1 tracking-brand"
             >
               {l.label}
             </a>
