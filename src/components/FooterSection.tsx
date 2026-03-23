@@ -1,4 +1,4 @@
-import logoMark from "@/assets/logo-mark.png";
+import logoHorizontal from "@/assets/logo-horizontal.png";
 
 const ETSY_URL = "https://neomastreasuresbyang.etsy.com";
 const FACEBOOK_URL = "https://www.facebook.com/profile.php?id=61579698460894";
