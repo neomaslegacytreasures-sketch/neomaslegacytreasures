@@ -40,7 +40,7 @@ const HeroSection = () => {
                 Get Free Checklist
               </a>
             </div>
-            <p className="text-sm text-muted-foreground italic">
+            <p className="text-sm text-primary-foreground/60 italic">
               Printable or digital. Thoughtfully designed. Created to make a sensitive process feel calmer, clearer, and easier to manage.
             </p>
           </div>
