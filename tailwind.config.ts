@@ -14,8 +14,9 @@ export default {
     },
     extend: {
       fontFamily: {
-        heading: ["League Spartan", "sans-serif"],
+        heading: ["Libre Baskerville", "serif"],
         body: ["Libre Baskerville", "serif"],
+        label: ["League Spartan", "sans-serif"],
       },
       colors: {
         border: "hsl(var(--border))",
