@@ -22,7 +22,7 @@ const StickyCTA = () => {
             href={ETSY_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="rounded-lg bg-primary px-5 py-2 text-sm font-heading font-bold text-primary-foreground shadow-sm hover:shadow-md transition-shadow active:scale-[0.97]"
+            className="rounded-lg bg-primary px-5 py-2 text-sm font-label font-bold text-primary-foreground shadow-sm hover:shadow-md transition-shadow active:scale-[0.97] tracking-brand"
           >
             Shop the Binder
           </a>
