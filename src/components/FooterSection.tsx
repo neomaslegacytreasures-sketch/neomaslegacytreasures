@@ -1,5 +1,4 @@
 import logoMark from "@/assets/logo-mark.png";
-import logoHorizontal from "@/assets/logo-horizontal.png";
 
 const ETSY_URL = "https://neomastreasuresbyang.etsy.com";
 const FACEBOOK_URL = "https://www.facebook.com/profile.php?id=61579698460894";
@@ -9,7 +8,7 @@ const FooterSection = () => (
     <div className="container-wide">
       <div className="flex flex-col md:flex-row justify-between items-center gap-6">
         <div className="flex items-center gap-3">
-          <img src={logoMark} alt="" className="h-12 w-12 rounded-full" />
+          <img src={logoMark} alt="" className="h-10 w-auto" />
           <div>
             <p className="font-heading font-bold text-lg">
               Neoma's Legacy Treasures
