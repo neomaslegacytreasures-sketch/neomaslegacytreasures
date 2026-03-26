@@ -1,3 +1,6 @@
+@import '@fontsource/merriweather/300.css';
+@import '@fontsource/merriweather/400.css';
+@import '@fontsource/merriweather/700.css';
 @import '@fontsource/league-spartan/400.css';
 @import '@fontsource/league-spartan/700.css';
 @import '@fontsource/libre-baskerville/400.css';
@@ -10,55 +13,56 @@
 
 @layer base {
   :root {
-    --background: 36 29% 96%;
-    --foreground: 177 62% 15%;
+    --background: 30 25% 95%;
+    --foreground: 20 12% 20%;
 
     --card: 0 0% 100%;
-    --card-foreground: 177 62% 15%;
+    --card-foreground: 20 12% 20%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 177 62% 15%;
+    --popover-foreground: 20 12% 20%;
 
-    --primary: 177 62% 15%;
-    --primary-foreground: 36 29% 96%;
+    --primary: 8 30% 56%;
+    --primary-foreground: 30 25% 95%;
 
-    --secondary: 176 41% 31%;
-    --secondary-foreground: 36 29% 96%;
+    --secondary: 145 10% 62%;
+    --secondary-foreground: 20 12% 20%;
 
-    --muted: 36 15% 92%;
-    --muted-foreground: 177 20% 40%;
+    --muted: 30 12% 90%;
+    --muted-foreground: 20 8% 45%;
 
-    --accent: 46 66% 57%;
-    --accent-foreground: 177 62% 15%;
+    --accent: 8 35% 72%;
+    --accent-foreground: 20 12% 20%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 36 15% 87%;
-    --input: 36 15% 87%;
-    --ring: 177 62% 15%;
+    --border: 30 12% 85%;
+    --input: 30 12% 85%;
+    --ring: 8 30% 56%;
 
     --radius: 0.75rem;
 
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
-    --sidebar-primary: 177 62% 15%;
+    --sidebar-primary: 8 30% 56%;
     --sidebar-primary-foreground: 0 0% 98%;
     --sidebar-accent: 240 4.8% 95.9%;
     --sidebar-accent-foreground: 240 5.9% 10%;
     --sidebar-border: 220 13% 91%;
-    --sidebar-ring: 177 62% 15%;
+    --sidebar-ring: 8 30% 56%;
 
     /* Custom tokens */
-    --deep-teal: 177 62% 15%;
-    --core-teal: 176 41% 31%;
-    --bone: 36 29% 96%;
-    --walnut: 27 16% 25%;
+    --dusty-rose: 8 30% 56%;
+    --soft-pink: 8 35% 72%;
+    --sage: 145 10% 62%;
+    --bone: 30 25% 95%;
+    --walnut: 20 12% 20%;
     --gold: 46 66% 57%;
     --gold-light: 46 66% 90%;
 
-    --font-heading: 'Libre Baskerville', serif;
-    --font-body: 'Libre Baskerville', serif;
+    --font-heading: 'Merriweather', serif;
+    --font-body: 'Merriweather', serif;
     --font-label: 'League Spartan', sans-serif;
   }
 }
@@ -71,17 +75,19 @@
   body {
     @apply bg-background text-foreground antialiased;
     font-family: var(--font-body);
+    font-weight: 300;
     overflow-wrap: break-word;
   }
 
   h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-heading);
     text-wrap: balance;
-    letter-spacing: 0.03em;
+    letter-spacing: 0.04em;
   }
 
   p {
     text-wrap: pretty;
+    line-height: 1.8;
   }
 
   .font-label, .tracking-brand {

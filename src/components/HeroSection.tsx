@@ -12,10 +12,10 @@ const HeroSection = () => {
       <div className="container-wide">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           <div {...r1} ref={r1.ref}>
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold leading-[1.1] tracking-tight text-primary-foreground mb-6">
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold leading-[1.2] text-primary-foreground mb-6">
               Estate Planning Printables & Personal Guidance to Help Families Get Organized
             </h1>
-            <p className="font-body text-lg text-primary-foreground/70 mb-8 max-w-lg leading-relaxed">
+            <p className="text-lg text-primary-foreground/80 mb-8 max-w-lg leading-relaxed">
               Get your affairs in order with a beautifully designed estate planning binder, plus practical support for organizing important documents, final wishes, and legacy information in one clear place.
             </p>
             <div className="flex flex-wrap gap-3 mb-5">
@@ -23,7 +23,7 @@ const HeroSection = () => {
                 href={ETSY_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center rounded-lg bg-accent px-6 py-3 font-label font-bold text-accent-foreground shadow-md hover:shadow-lg transition-shadow active:scale-[0.97] tracking-brand"
+                className="inline-flex items-center justify-center rounded-lg bg-primary-foreground px-6 py-3 font-label font-bold text-primary shadow-md hover:shadow-lg transition-shadow active:scale-[0.97] tracking-brand"
               >
                 Shop the Binder on Etsy
               </a>
@@ -35,7 +35,7 @@ const HeroSection = () => {
               </a>
               <a
                 href="#checklist"
-                className="inline-flex items-center justify-center rounded-lg bg-secondary px-6 py-3 font-label font-bold text-secondary-foreground shadow-sm hover:shadow-md transition-shadow active:scale-[0.97] tracking-brand"
+                className="inline-flex items-center justify-center rounded-lg bg-accent px-6 py-3 font-label font-bold text-accent-foreground shadow-sm hover:shadow-md transition-shadow active:scale-[0.97] tracking-brand"
               >
                 Get Free Checklist
               </a>
