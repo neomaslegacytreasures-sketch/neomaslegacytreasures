@@ -10,9 +10,6 @@ const FooterSection = () => (
         <div className="flex items-center gap-3">
           <img src={logoHorizontal} alt="Neoma's Legacy Treasures" className="h-12 w-auto brightness-0 invert" />
           <div>
-            <p className="font-heading font-bold text-lg">
-              Neoma's Legacy Treasures
-            </p>
             <p className="text-sm opacity-70 mt-1">Estate Planning Printables & Support</p>
           </div>
         </div>
