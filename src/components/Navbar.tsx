@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
-import logoHorizontal from "@/assets/logo-horizontal.svg";
+import logoHorizontal from "@/assets/logo-horizontal.png";
 
 const ETSY_URL = "https://neomastreasuresbyang.etsy.com";
 
