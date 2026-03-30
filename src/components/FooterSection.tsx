@@ -25,7 +25,7 @@ const FooterSection = () => (
           </a>
         </div>
       </div>
-      <div className="mt-8 pt-6 border-t border-primary-foreground/20 text-center space-y-2">
+      <div className="mt-8 pt-6 border-t border-bone/20 text-center space-y-2">
         <p className="text-xs opacity-60">
           For organizational and informational purposes only. Not legal, financial, or tax advice.
         </p>
