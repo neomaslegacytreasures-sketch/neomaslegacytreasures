@@ -14,54 +14,54 @@
 @layer base {
   :root {
     --background: 30 20% 97%;
-    --foreground: 20 12% 20%;
+    --foreground: 177 62% 15%;
 
     --card: 0 0% 100%;
-    --card-foreground: 20 12% 20%;
+    --card-foreground: 177 62% 15%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 20 12% 20%;
+    --popover-foreground: 177 62% 15%;
 
-    --primary: 8 30% 56%;
+    --primary: 176 41% 31%;
     --primary-foreground: 30 25% 95%;
 
-    --secondary: 145 10% 62%;
-    --secondary-foreground: 20 12% 20%;
+    --secondary: 8 30% 56%;
+    --secondary-foreground: 30 25% 95%;
 
-    --muted: 30 12% 90%;
-    --muted-foreground: 20 8% 45%;
+    --muted: 30 12% 92%;
+    --muted-foreground: 177 20% 35%;
 
     --accent: 8 35% 72%;
-    --accent-foreground: 20 12% 20%;
+    --accent-foreground: 177 62% 15%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
     --border: 30 12% 85%;
     --input: 30 12% 85%;
-    --ring: 8 30% 56%;
+    --ring: 176 41% 31%;
 
     --radius: 0.75rem;
 
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
-    --sidebar-primary: 8 30% 56%;
+    --sidebar-primary: 176 41% 31%;
     --sidebar-primary-foreground: 0 0% 98%;
     --sidebar-accent: 240 4.8% 95.9%;
     --sidebar-accent-foreground: 240 5.9% 10%;
     --sidebar-border: 220 13% 91%;
-    --sidebar-ring: 8 30% 56%;
+    --sidebar-ring: 176 41% 31%;
 
     /* Custom tokens */
-    --dusty-rose: 8 30% 56%;
-    --soft-pink: 8 35% 72%;
-    --sage: 145 10% 62%;
+    --deep-teal: 177 62% 15%;
+    --core-teal: 176 41% 31%;
+    --terracotta: 8 30% 56%;
+    --soft-clay: 8 35% 72%;
     --bone: 30 25% 95%;
-    --walnut: 20 12% 20%;
     --gold: 46 66% 57%;
     --gold-light: 46 66% 90%;
 
-    --font-heading: 'Merriweather', serif;
+    --font-heading: 'Libre Baskerville', serif;
     --font-body: 'Merriweather', serif;
     --font-label: 'League Spartan', sans-serif;
   }
