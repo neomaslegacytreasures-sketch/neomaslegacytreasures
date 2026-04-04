@@ -12,14 +12,14 @@ const HowItWorks = () => {
   const header = useReveal();
 
   return (
-    <section className="py-20 lg:py-28 section-padding bg-card">
+    <section className="py-24 lg:py-32 section-padding bg-primary text-primary-foreground">
       <div className="container-narrow">
-        <div {...header} ref={header.ref} className={`${header.className} text-center mb-14`}>
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-foreground">
+        <div {...header} ref={header.ref} className={`${header.className} text-center mb-16`}>
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold">
             How to Build Your Estate Binder
           </h2>
         </div>
-        <div className="space-y-6">
+        <div className="space-y-8">
           {steps.map((s, i) => {
             const r = useReveal();
             return (
@@ -29,19 +29,19 @@ const HowItWorks = () => {
                 ref={r.ref}
                 className={`${r.className} reveal-delay-${i} flex gap-6 items-start`}
               >
-                <div className="flex-shrink-0 w-14 h-14 rounded-2xl bg-primary flex items-center justify-center">
+                <div className="flex-shrink-0 w-14 h-14 rounded-2xl bg-accent/20 flex items-center justify-center">
                   <span className="font-heading font-bold text-primary-foreground text-lg">{s.num}</span>
                 </div>
                 <div>
-                  <h3 className="font-heading font-bold text-lg text-foreground mb-1">{s.title}</h3>
-                  <p className="font-body text-muted-foreground text-sm leading-relaxed">{s.desc}</p>
+                  <h3 className="font-heading font-bold text-lg mb-2">{s.title}</h3>
+                  <p className="font-body text-primary-foreground/70 text-sm leading-relaxed">{s.desc}</p>
                 </div>
               </div>
             );
           })}
         </div>
-        <div className="mt-10 text-center">
-          <p className="font-body text-sm italic text-muted-foreground">
+        <div className="mt-12 text-center">
+          <p className="font-body text-sm italic text-primary-foreground/60">
             Small steps now can prevent confusion, stress, and unnecessary scrambling later.
           </p>
         </div>

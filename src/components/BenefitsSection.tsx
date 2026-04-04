@@ -14,14 +14,14 @@ const BenefitsSection = () => {
   const header = useReveal();
 
   return (
-    <section className="py-20 lg:py-28 section-padding bg-background">
+    <section className="py-24 lg:py-32 section-padding bg-background">
       <div className="container-wide">
-        <div {...header} ref={header.ref} className={`${header.className} text-center mb-14`}>
+        <div {...header} ref={header.ref} className={`${header.className} text-center mb-16`}>
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-foreground">
             Why Families Love This Binder
           </h2>
         </div>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {benefits.map((b, i) => {
             const r = useReveal();
             return (
@@ -29,12 +29,12 @@ const BenefitsSection = () => {
                 key={b.title}
                 {...r}
                 ref={r.ref}
-                className={`${r.className} reveal-delay-${i % 6} rounded-2xl bg-card p-8 shadow-sm hover:shadow-md transition-shadow`}
+                className={`${r.className} reveal-delay-${i % 6} rounded-2xl bg-card p-10 shadow-sm hover:shadow-md transition-shadow`}
               >
-                <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-5">
-                  <b.icon className="w-6 h-6 text-primary" />
+                <div className="w-12 h-12 rounded-xl bg-accent/40 flex items-center justify-center mb-6">
+                  <b.icon className="w-6 h-6 text-secondary" />
                 </div>
-                <h3 className="font-heading font-bold text-lg text-foreground mb-2">{b.title}</h3>
+                <h3 className="font-heading font-bold text-lg text-foreground mb-3">{b.title}</h3>
                 <p className="font-body text-muted-foreground text-sm leading-relaxed">{b.desc}</p>
               </div>
             );

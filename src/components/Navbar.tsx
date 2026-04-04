@@ -17,15 +17,15 @@ const Navbar = () => {
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-md border-b border-border">
-      <div className="container-wide section-padding flex items-center justify-between h-16">
+      <div className="container-wide section-padding flex items-center justify-between h-18 py-3">
         <a href="#" className="block">
           <img src={logoHorizontal} alt="Neoma's Legacy Treasures — Estate Planning & Family Heritage" className="h-10 w-auto" />
         </a>
 
         {/* Desktop */}
-        <div className="hidden md:flex items-center gap-6">
+        <div className="hidden md:flex items-center gap-8">
           {links.map((l) => (
-            <a key={l.href} href={l.href} className="font-label text-sm text-foreground/70 hover:text-foreground transition-colors tracking-brand">
+            <a key={l.href} href={l.href} className="font-label text-xs text-foreground/70 hover:text-foreground transition-colors tracking-brand">
               {l.label}
             </a>
           ))}
@@ -33,7 +33,7 @@ const Navbar = () => {
             href={ETSY_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="rounded-lg bg-primary px-4 py-2 text-sm font-label font-bold text-primary-foreground shadow-sm hover:shadow-md transition-shadow active:scale-[0.97] tracking-brand">
+            className="rounded-lg bg-primary px-5 py-2.5 text-xs font-label font-bold text-primary-foreground shadow-sm hover:shadow-md transition-shadow active:scale-[0.97] tracking-brand">
             Shop on Etsy
           </a>
         </div>
@@ -52,7 +52,7 @@ const Navbar = () => {
               key={l.href}
               href={l.href}
               onClick={() => setOpen(false)}
-              className="block font-label text-sm text-foreground/70 hover:text-foreground transition-colors py-1 tracking-brand"
+              className="block font-label text-xs text-foreground/70 hover:text-foreground transition-colors py-1 tracking-brand"
             >
               {l.label}
             </a>
@@ -61,7 +61,7 @@ const Navbar = () => {
             href={ETSY_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block rounded-lg bg-primary px-4 py-2 text-sm font-label font-bold text-primary-foreground shadow-sm mt-2 tracking-brand"
+            className="inline-block rounded-lg bg-primary px-5 py-2.5 text-xs font-label font-bold text-primary-foreground shadow-sm mt-2 tracking-brand"
           >
             Shop on Etsy
           </a>

@@ -14,8 +14,8 @@ export default {
     },
     extend: {
       fontFamily: {
-        heading: ["Merriweather", "serif"],
-        body: ["Merriweather", "serif"],
+        heading: ["Libre Baskerville", "serif"],
+        body: ["Libre Baskerville", "serif"],
         label: ["League Spartan", "sans-serif"],
       },
       colors: {
@@ -52,15 +52,11 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        "dusty-rose": "hsl(var(--dusty-rose))",
-        "soft-pink": "hsl(var(--soft-pink))",
-        sage: "hsl(var(--sage))",
+        "deep-teal": "hsl(var(--deep-teal))",
+        "muted-teal": "hsl(var(--muted-teal))",
+        "soft-sage": "hsl(var(--soft-sage))",
         bone: "hsl(var(--bone))",
-        walnut: "hsl(var(--walnut))",
-        gold: {
-          DEFAULT: "hsl(var(--gold))",
-          light: "hsl(var(--gold-light))",
-        },
+        "brand-text": "hsl(var(--brand-text))",
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",

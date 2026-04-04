@@ -8,7 +8,6 @@ const ChecklistSignup = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [submitted, setSubmitted] = useState(false);
-
   const [loading, setLoading] = useState(false);
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -32,20 +31,20 @@ const ChecklistSignup = () => {
   };
 
   return (
-    <section className="py-20 lg:py-28 section-padding bg-primary/5" id="checklist">
+    <section className="py-24 lg:py-32 section-padding bg-primary text-primary-foreground" id="checklist">
       <div className="container-narrow">
         <div {...header} ref={header.ref} className={`${header.className} text-center`}>
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-foreground mb-4">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-5">
             Get the Free Estate Planning Starter Checklist
           </h2>
-          <p className="font-body text-muted-foreground mb-10 max-w-xl mx-auto leading-relaxed">
-            Want an easy place to begin? Sign up to receive a free starter checklist to help you gather the most important estate and household information before filling out your binder.
+          <p className="font-body text-primary-foreground/70 mb-12 max-w-xl mx-auto leading-relaxed">
+            Want an easy place to begin? Sign up to receive a free starter checklist to help you gather the most important estate and household information.
           </p>
         </div>
 
         {submitted ? (
           <div className="text-center py-8">
-            <p className="font-heading font-bold text-xl text-primary">Thank you. Your free checklist is on the way.</p>
+            <p className="font-heading font-bold text-xl text-accent">Thank you. Your free checklist is on the way.</p>
           </div>
         ) : (
           <form onSubmit={handleSubmit} className="max-w-md mx-auto space-y-4">
@@ -55,7 +54,7 @@ const ChecklistSignup = () => {
               value={name}
               onChange={(e) => setName(e.target.value)}
               required
-              className="w-full rounded-lg border border-input bg-card px-4 py-3 text-sm font-body text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring"
+              className="w-full rounded-lg border border-primary-foreground/20 bg-primary-foreground/10 px-4 py-3 text-sm font-body text-primary-foreground placeholder:text-primary-foreground/50 focus:outline-none focus:ring-2 focus:ring-accent"
             />
             <input
               type="email"
@@ -63,20 +62,20 @@ const ChecklistSignup = () => {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required
-              className="w-full rounded-lg border border-input bg-card px-4 py-3 text-sm font-body text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring"
+              className="w-full rounded-lg border border-primary-foreground/20 bg-primary-foreground/10 px-4 py-3 text-sm font-body text-primary-foreground placeholder:text-primary-foreground/50 focus:outline-none focus:ring-2 focus:ring-accent"
             />
             <button
               type="submit"
               disabled={loading}
-              className="w-full rounded-lg bg-primary px-6 py-3.5 font-heading font-bold text-primary-foreground shadow-md hover:shadow-lg transition-shadow active:scale-[0.97] disabled:opacity-50 disabled:cursor-not-allowed"
+              className="w-full rounded-lg bg-accent px-6 py-3.5 font-label font-bold text-accent-foreground shadow-md hover:shadow-lg transition-shadow active:scale-[0.97] disabled:opacity-50 disabled:cursor-not-allowed tracking-brand text-sm"
             >
               {loading ? "Sending…" : "Send Me the Free Checklist"}
             </button>
           </form>
         )}
 
-        <p className="text-center text-xs text-muted-foreground italic mt-6 max-w-md mx-auto">
-          Your information is treated with care and will only be used for updates, helpful resources, and printable offers related to organization and planning.
+        <p className="text-center text-xs text-primary-foreground/50 italic mt-8 max-w-md mx-auto">
+          Your information is treated with care and will only be used for updates, helpful resources, and printable offers.
         </p>
       </div>
     </section>
