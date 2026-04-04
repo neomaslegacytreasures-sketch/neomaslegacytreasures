@@ -30,33 +30,33 @@ const WhatsInside = () => {
   const displayed = showAll ? sections : sections.slice(0, 8);
 
   return (
-    <section className="py-20 lg:py-28 section-padding bg-background">
+    <section className="py-24 lg:py-32 section-padding bg-background">
       <div className="container-wide">
-        <div {...header} ref={header.ref} className={`${header.className} text-center mb-14`}>
+        <div {...header} ref={header.ref} className={`${header.className} text-center mb-16`}>
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-foreground">
             What's Inside the Binder
           </h2>
         </div>
-        <div {...grid} ref={grid.ref} className={`${grid.className} grid sm:grid-cols-2 lg:grid-cols-4 gap-4`}>
+        <div {...grid} ref={grid.ref} className={`${grid.className} grid sm:grid-cols-2 lg:grid-cols-4 gap-5`}>
           {displayed.map((s, i) => (
             <div
               key={s.title}
-              className="rounded-xl border border-border bg-card p-5 hover:shadow-md transition-shadow"
+              className="rounded-xl border border-border bg-card p-6 hover:shadow-md transition-shadow"
               style={{ animationDelay: `${i * 80}ms` }}
             >
-              <div className="w-8 h-8 rounded-lg bg-accent/30 flex items-center justify-center mb-3">
-                <span className="font-heading font-bold text-sm text-accent-foreground">{i + 1}</span>
+              <div className="w-9 h-9 rounded-lg bg-accent/40 flex items-center justify-center mb-4">
+                <span className="font-heading font-bold text-sm text-secondary">{i + 1}</span>
               </div>
-              <h3 className="font-heading font-bold text-sm text-foreground mb-1.5">{s.title}</h3>
+              <h3 className="font-heading font-bold text-sm text-foreground mb-2">{s.title}</h3>
               <p className="font-body text-xs text-muted-foreground leading-relaxed">{s.desc}</p>
             </div>
           ))}
         </div>
         {!showAll && (
-          <div className="text-center mt-8">
+          <div className="text-center mt-10">
             <button
               onClick={() => setShowAll(true)}
-              className="font-heading font-bold text-primary underline underline-offset-4 hover:text-primary/80 transition-colors active:scale-[0.97]"
+              className="font-heading font-bold text-secondary underline underline-offset-4 hover:text-primary transition-colors active:scale-[0.97]"
             >
               Show All 19 Sections
             </button>
