@@ -12,17 +12,17 @@ const ServicesSection = () => {
   const header = useReveal();
 
   return (
-    <section className="py-20 lg:py-28 section-padding bg-background" id="services">
+    <section className="py-24 lg:py-32 section-padding bg-background" id="services">
       <div className="container-wide">
-        <div {...header} ref={header.ref} className={`${header.className} text-center mb-6`}>
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-foreground mb-4">
+        <div {...header} ref={header.ref} className={`${header.className} text-center mb-8`}>
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-foreground mb-5">
             Ways Angie Can Help
           </h2>
           <p className="font-body text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            Along with printable products, I also offer supportive, organization-focused help for families who need a little guidance getting started. This support is practical and informational in nature and is designed to help you feel less overwhelmed as you gather important details.
+            Along with printable products, I also offer supportive, organization-focused help for families who need a little guidance getting started.
           </p>
         </div>
-        <div className="grid sm:grid-cols-2 gap-6 mt-12">
+        <div className="grid sm:grid-cols-2 gap-8 mt-14">
           {services.map((s, i) => {
             const r = useReveal();
             return (
@@ -30,21 +30,21 @@ const ServicesSection = () => {
                 key={s.title}
                 {...r}
                 ref={r.ref}
-                className={`${r.className} reveal-delay-${i} rounded-2xl border border-border bg-card p-8 hover:shadow-md transition-shadow`}
+                className={`${r.className} reveal-delay-${i} rounded-2xl border border-border bg-card p-10 hover:shadow-md transition-shadow`}
               >
-                <div className="w-12 h-12 rounded-xl bg-secondary/10 flex items-center justify-center mb-5">
+                <div className="w-12 h-12 rounded-xl bg-accent/40 flex items-center justify-center mb-6">
                   <s.icon className="w-6 h-6 text-secondary" />
                 </div>
-                <h3 className="font-heading font-bold text-lg text-foreground mb-2">{s.title}</h3>
+                <h3 className="font-heading font-bold text-lg text-foreground mb-3">{s.title}</h3>
                 <p className="font-body text-muted-foreground text-sm leading-relaxed">{s.desc}</p>
               </div>
             );
           })}
         </div>
-        <div className="text-center mt-10 space-y-4">
+        <div className="text-center mt-12 space-y-4">
           <a
             href="#contact"
-            className="inline-flex items-center justify-center rounded-lg bg-primary px-8 py-3.5 font-heading font-bold text-primary-foreground shadow-md hover:shadow-lg transition-shadow active:scale-[0.97]"
+            className="inline-flex items-center justify-center rounded-lg bg-primary px-8 py-3.5 font-label font-bold text-primary-foreground shadow-md hover:shadow-lg transition-shadow active:scale-[0.97] tracking-brand text-sm"
           >
             Contact Angie
           </a>

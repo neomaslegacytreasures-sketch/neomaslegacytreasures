@@ -1,6 +1,6 @@
 import { useReveal } from "@/hooks/useReveal";
 import { useState } from "react";
-import { MessageCircle, Send } from "lucide-react";
+import { Send } from "lucide-react";
 
 const prompts = [
   "What should I gather first?",
@@ -44,10 +44,10 @@ const AIHelper = () => {
   };
 
   return (
-    <section className="py-20 lg:py-28 section-padding bg-background" id="helper">
+    <section className="py-24 lg:py-32 section-padding bg-background" id="helper">
       <div className="container-narrow">
-        <div {...header} ref={header.ref} className={`${header.className} text-center mb-10`}>
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-foreground mb-3">
+        <div {...header} ref={header.ref} className={`${header.className} text-center mb-12`}>
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-foreground mb-4">
             Estate Planning Helper
           </h2>
           <p className="font-body text-muted-foreground">
@@ -56,7 +56,6 @@ const AIHelper = () => {
         </div>
 
         <div className="rounded-2xl border border-border bg-card shadow-sm overflow-hidden max-w-2xl mx-auto">
-          {/* Chat area */}
           <div className="p-6 min-h-[200px] max-h-[400px] overflow-y-auto space-y-4">
             {messages.length === 0 && (
               <p className="text-center text-sm text-muted-foreground italic">
@@ -68,8 +67,8 @@ const AIHelper = () => {
                 <div
                   className={`rounded-xl px-4 py-3 max-w-[80%] text-sm leading-relaxed ${
                     m.role === "user"
-                      ? "bg-primary text-primary-foreground font-heading"
-                      : "bg-muted text-foreground font-body"
+                      ? "bg-primary text-primary-foreground font-body"
+                      : "bg-accent/30 text-foreground font-body"
                   }`}
                 >
                   {m.text}
@@ -78,20 +77,18 @@ const AIHelper = () => {
             ))}
           </div>
 
-          {/* Prompt chips */}
           <div className="px-6 pb-4 flex flex-wrap gap-2">
             {prompts.map((p) => (
               <button
                 key={p}
                 onClick={() => handlePrompt(p)}
-                className="rounded-full border border-border px-3 py-1.5 text-xs font-heading text-foreground hover:bg-muted transition-colors active:scale-[0.97]"
+                className="rounded-full border border-border px-3 py-1.5 text-xs font-body text-foreground hover:bg-accent/20 transition-colors active:scale-[0.97]"
               >
                 {p}
               </button>
             ))}
           </div>
 
-          {/* Input */}
           <form onSubmit={handleSubmit} className="border-t border-border p-4 flex gap-3">
             <input
               type="text"
@@ -109,7 +106,7 @@ const AIHelper = () => {
           </form>
         </div>
 
-        <p className="text-center text-xs text-muted-foreground italic mt-4">
+        <p className="text-center text-xs text-muted-foreground italic mt-5">
           This helper is for general informational guidance only and does not provide legal advice.
         </p>
       </div>
