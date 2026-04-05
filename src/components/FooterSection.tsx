@@ -1,4 +1,4 @@
-import logoMarkBrown from "@/assets/logo-mark-brown.png";
+import keyIconLight from "@/assets/key-icon-light.png";
 
 const ETSY_URL = "https://neomastreasuresbyang.etsy.com";
 const FACEBOOK_URL = "https://www.facebook.com/profile.php?id=61579698460894";
@@ -8,7 +8,7 @@ const FooterSection = () => (
     <div className="container-wide">
       <div className="flex flex-col md:flex-row justify-between items-center gap-8">
         <div className="flex items-center gap-4">
-          <img src={logoMarkBrown} alt="" className="h-12 w-auto brightness-[2]" />
+          <img src={keyIconLight} alt="Neoma's Legacy Treasures key icon" className="h-12 w-12 rounded-full" />
           <div>
             <p className="font-heading font-bold text-lg tracking-wide">
               Neoma's Legacy Treasures
