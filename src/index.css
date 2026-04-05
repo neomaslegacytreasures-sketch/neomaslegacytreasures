@@ -13,6 +13,78 @@
 
 @layer base {
   :root {
+  /* === NLT Brand System — Deep Teal Override === */
+
+  /* Colors */
+  --nlt-primary:     #0B3D3A;   /* Deep Teal — headers, nav, CTA bg */
+  --nlt-secondary:   #2F6F6B;   /* Muted Teal — buttons, links */
+  --nlt-accent:      #BFD6D2;   /* Soft Sage — dividers, highlights */
+  --nlt-bg:          #F4F1EA;   /* Bone White — page background */
+  --nlt-text:        #1E2E2C;   /* Charcoal Teal — body copy */
+
+  /* Typography */
+  --font-heading:    'Libre Baskerville', Georgia, serif;
+  --font-label:     'League Spartan', sans-serif;
+
+  /* Spacing */
+  --space-section:  80px;
+  --space-gap:      24px;
+  --radius:         6px;
+}
+
+body {
+  background-color: var(--nlt-bg);
+  color: var(--nlt-text);
+  font-family: var(--font-heading);
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-heading);
+  color: var(--nlt-primary);
+  letter-spacing: 0.02em;
+}
+
+.label, .subheading, nav a, .badge {
+  font-family: var(--font-label);
+  text-transform: uppercase;
+  letter-spacing: 0.25em;   /* +250 tracking */
+}
+
+.btn-primary {
+  background: var(--nlt-primary);
+  color: var(--nlt-bg);
+  font-family: var(--font-label);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  border-radius: var(--radius);
+  padding: 12px 28px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-secondary {
+  background: transparent;
+  color: var(--nlt-secondary);
+  border: 1.5px solid var(--nlt-secondary);
+  font-family: var(--font-label);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  border-radius: var(--radius);
+  padding: 12px 28px;
+  cursor: pointer;
+}
+
+section { background: var(--nlt-bg); padding: var(--space-section) 0; }
+section.alt { background: #fff; }
+
+.accent-rule {
+  border: none;
+  border-top: 2px solid var(--nlt-accent);
+  margin: 32px auto;
+  max-width: 60px;
+}:root {
+    --background: 30 20% 97%;
+    --foreground: 20 12% 20%;
     /* ── Brand Palette ── */
     --background: 42 29% 93%;        /* Bone White #F4F1EA */
     --foreground: 172 24% 15%;       /* Primary Text #1E2E2C */
