@@ -18,12 +18,8 @@ const Navbar = () => {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-md border-b border-border">
       <div className="container-wide section-padding flex items-center justify-between h-18 py-3">
-        <a href="#" className="flex items-center gap-2.5">
-          <img src={circleIcon} alt="Neoma's Legacy Treasures" className="h-9 w-9 rounded-full object-cover" />
-          <span className="font-heading text-foreground leading-tight">
-            <span className="block text-sm tracking-wide">Neoma's Legacy</span>
-            <span className="block text-[0.65rem] font-label font-bold tracking-[0.25em] uppercase">Treasures</span>
-          </span>
+        <a href="#" className="flex items-center">
+          <img src={headerLogo} alt="Neoma's Legacy Treasures" className="h-10 w-auto object-contain" />
         </a>
 
         {/* Desktop */}
