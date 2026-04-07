@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
-import circleIcon from "@/assets/nlt-circle-logo.png";
+import headerLogo from "@/assets/header-key-logo-horizontal.png";
 
 const ETSY_URL = "https://neomastreasuresbyang.etsy.com";
 
