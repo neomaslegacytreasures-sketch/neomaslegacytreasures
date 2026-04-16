@@ -1,4 +1,4 @@
-import keyIconLight from "@/assets/key-icon-light.png";
+import keyIconLight from "@/assets/footer-flowerkey-favicon.png";
 
 const ETSY_URL = "https://neomastreasuresbyang.etsy.com";
 const FACEBOOK_URL = "https://www.facebook.com/profile.php?id=61579698460894";
