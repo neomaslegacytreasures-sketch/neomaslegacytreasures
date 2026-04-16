@@ -54,11 +54,20 @@
     --sidebar-ring: 176 72% 14%;
 
     /* Custom brand tokens */
-    --deep-teal: 176 72% 14%;
-    --muted-teal: 176 41% 31%;
-    --soft-sage: 168 18% 77%;
-    --bone: 42 29% 93%;
-    --brand-text: 172 24% 15%;
+    --deep-teal: 176 72% 14%;        /* #0B3D3A */
+    --muted-teal: 176 41% 31%;       /* #2F6F6B */
+    --soft-sage: 168 18% 77%;        /* #BFD6D2 */
+    --bone: 42 29% 93%;              /* #F4F1EA */
+    --brand-text: 172 24% 15%;       /* #1E2E2C */
+
+    /* Warm Gold premium accent — sparingly: badge logo, premium CTAs */
+    --warm-gold: 46 65% 52%;         /* #D4AF37 */
+    --warm-gold-soft: 36 32% 62%;    /* #C2A878 */
+
+    /* Extended neutrals */
+    --warm-gray: 30 9% 50%;          /* #8C8074 — captions, metadata */
+    --near-black: 0 0% 11%;          /* #1C1C1C — long-form reading */
+    --dusty-gray-green: 174 12% 61%; /* #8FA9A6 — subtle dividers */
 
     /* ── Typography ── */
     --font-heading: 'Libre Baskerville', serif;
