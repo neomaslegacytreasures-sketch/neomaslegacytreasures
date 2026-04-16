@@ -57,6 +57,11 @@ export default {
         "soft-sage": "hsl(var(--soft-sage))",
         bone: "hsl(var(--bone))",
         "brand-text": "hsl(var(--brand-text))",
+        "warm-gold": "hsl(var(--warm-gold))",
+        "warm-gold-soft": "hsl(var(--warm-gold-soft))",
+        "warm-gray": "hsl(var(--warm-gray))",
+        "near-black": "hsl(var(--near-black))",
+        "dusty-gray-green": "hsl(var(--dusty-gray-green))",
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",
