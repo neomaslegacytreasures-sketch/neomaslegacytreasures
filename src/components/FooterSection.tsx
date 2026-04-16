@@ -1,4 +1,4 @@
-import logoLight from "@/assets/logo-horizontal-light.png";
+import keyIconLight from "@/assets/key-icon-light.png";
 
 const ETSY_URL = "https://neomastreasuresbyang.etsy.com";
 const FACEBOOK_URL = "https://www.facebook.com/profile.php?id=61579698460894";
@@ -7,8 +7,14 @@ const FooterSection = () => (
   <footer className="py-16 section-padding bg-primary text-primary-foreground">
     <div className="container-wide">
       <div className="flex flex-col md:flex-row justify-between items-center gap-8">
-        <div className="flex items-center">
-          <img src={logoLight} alt="Neoma's Legacy Treasures" className="h-16 w-auto object-contain brightness-150" />
+        <div className="flex items-center gap-4">
+          <img src={keyIconLight} alt="Neoma's Legacy Treasures key icon" className="h-12 w-12 rounded-full" />
+          <div>
+            <p className="font-heading font-bold text-lg tracking-wide">
+              Neoma's Legacy Treasures
+            </p>
+            <p className="text-sm opacity-70 mt-1">Estate Planning Printables & Support</p>
+          </div>
         </div>
         <div className="flex gap-8 text-sm">
           <a href={ETSY_URL} target="_blank" rel="noopener noreferrer" className="hover:underline underline-offset-4 opacity-80 hover:opacity-100 transition-opacity">
