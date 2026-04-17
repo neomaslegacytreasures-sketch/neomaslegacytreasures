@@ -63,6 +63,25 @@ const ProductShowcase = () => {
             <p className="mt-5 text-sm text-muted-foreground italic">
               Perfect for personal planning, helping a parent get organized, or creating one reliable place for important family information.
             </p>
+
+            {/* Optional Heirloom Personalization Add-On */}
+            <div className="mt-8 rounded-xl border border-warm-gold-soft/50 bg-bone p-5 sm:p-6">
+              <p className="font-label text-[0.65rem] tracking-[0.25em] uppercase text-warm-gold font-bold mb-2">
+                Optional Add-On · Concept Phase
+              </p>
+              <h3 className="font-heading text-lg font-bold text-brand-text mb-2">
+                Heirloom Personalization
+              </h3>
+              <p className="font-body text-sm text-brand-text/85 leading-relaxed">
+                Select binders may include a custom engraved <strong>Flower Key closure</strong>—a signature keepsake to honor the individual, protect what matters most, and transform the binder into something truly lasting.
+              </p>
+              <a
+                href="/symbol-meaning"
+                className="inline-block mt-3 font-label text-[0.7rem] tracking-[0.25em] uppercase text-secondary hover:text-primary font-bold transition-colors"
+              >
+                Read the Symbol Story →
+              </a>
+            </div>
           </div>
         </div>
       </div>

@@ -5,11 +5,12 @@ import headerLogo from "@/assets/header-key-logo-horizontal.png";
 const ETSY_URL = "https://neomastreasuresbyang.etsy.com";
 
 const links = [
-  { label: "About", href: "#about" },
-  { label: "Binder", href: "#product" },
-  { label: "Services", href: "#services" },
-  { label: "FAQ", href: "#faq" },
-  { label: "Contact", href: "#contact" },
+  { label: "About", href: "/#about" },
+  { label: "Symbol", href: "/symbol-meaning" },
+  { label: "Binder", href: "/#product" },
+  { label: "Services", href: "/#services" },
+  { label: "FAQ", href: "/#faq" },
+  { label: "Contact", href: "/#contact" },
 ];
 
 const Navbar = () => {
